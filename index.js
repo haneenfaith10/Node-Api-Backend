@@ -5,7 +5,6 @@ const Product = require("./models/product.model.js");
 
 const productRoutes = require("./routes/product.route.js");
 
-
 // MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
