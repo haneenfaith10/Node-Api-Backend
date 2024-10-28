@@ -1,8 +1,6 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const Product = require("./models/product.model.js");
-
 const productRoutes = require("./routes/product.route.js");
 
 // MIDDLEWARE
