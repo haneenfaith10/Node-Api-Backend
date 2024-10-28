@@ -21,7 +21,7 @@ mongoose
     "mongodb+srv://admin:vlxkE78oBlluzZSI@backenddb.ftubi.mongodb.net/Node-Api?retryWrites=true&w=majority&appName=BackendDB"
   )
   .then(() => {
-    console.log("Connected to MongoDB");
+    console.log("Connected to Database");
     app.listen(3000, () => {
       console.log("Server is running on port 3000");
     });
