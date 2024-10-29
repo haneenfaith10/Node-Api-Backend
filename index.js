@@ -1,14 +1,15 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const productRoutes = require("./routes/product.route.js");
+const allRoutes = require("./routes");
 
 // MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ROUTES
-app.use("/api/products", productRoutes);
+app.use("/api", allRoutes);
+
+
 
 app.get("/", (req, res) => {
   res.send("Hello from Node Api");
